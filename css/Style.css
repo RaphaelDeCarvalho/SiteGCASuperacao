@@ -1,0 +1,41 @@
+.container {
+    padding: 0 2rem;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: rgb(254,55,50);
+    background: linear-gradient(90deg, rgba(254,55,50,1) 0%, rgba(255,143,77,1) 50%, rgba(254,55,50,1) 100%);
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+    width: auto;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+
+}
+.nav-ul{
+    display: flex;
+    align-items: center;
+}
+.div-nav-li-b{
+    margin-left: 38vw;
+}
+.div-nav-li .nav-li-b{
+    display: none;
+}
+
+img.logohome{
+    
+    width: 244px;
+    height: auto;
+    
+}

@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: row;
     height: 6rem;
-    width: 100vw;
+    width: 90%;
     position: fixed;
     z-index: 2;
     display: flex;
@@ -36,18 +36,49 @@
 .div-nav-li .nav-li-b{
     display: none;
 }
-
+.div-nav-li.div-nav-li-b.nav-li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+}
+i button.icon-whatsapp {
+    border: none;
+    background: none;
+    position: fixed;
+    z-index: 2;
+    margin-top: 90vh;
+    margin-left: 80vw;
+}
 img.logohome{
     margin-top: 6rem;
     width: 214px;
     height: auto;
     
 }
+div.logo-play {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.button.play {
+    width: 74px;
+    height: 74px;
+    padding: 0;
+    background: none;
+    position: fixed;
+    box-sizing: border-box;
+    border-width: 37px 0px 37px 74px;
+    border-color: transparent transparent transparent #202020;
+    opacity: 60%;
+    margin-bottom: 4rem;
+  }
 h1.home-title{
     margin-top: 6rem;
     color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: 2rem;
     text-shadow: #000000 0 3px 4px;
     text-align: center;
 }
@@ -67,7 +98,7 @@ li.subtitle-item{
     margin-right: auto;
 }
 li.subtitle-item p{
-    height: 0.2rem;
+    height: 1px;
     width: 2rem;
     background-color: #FFFFFF;
     box-shadow: #000000 2px 2px 6px;

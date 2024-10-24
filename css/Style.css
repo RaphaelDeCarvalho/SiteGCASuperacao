@@ -66,7 +66,7 @@ div.logo-play {
     height: 74px;
     padding: 0;
     background: none;
-    position: fixed;
+    position: absolute;
     box-sizing: border-box;
     border-width: 37px 0px 37px 74px;
     border-color: transparent transparent transparent #202020;

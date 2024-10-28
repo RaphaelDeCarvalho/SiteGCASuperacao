@@ -104,7 +104,7 @@ li.subtitle-item p{
     box-shadow: #000000 2px 2px 6px;
 }
 section.a-empresa {
-    height: 150vh;
+    height: 105vh;
     background-image: url(/img/a_empresa_top.png);
     background-position: center;
     display: flex;
@@ -121,8 +121,46 @@ h1.a-empresa-title {
 p.a-empresa-subtitle {
     margin-top: 2.5rem;
     color: #FFFFFF;
-    font-size: 0.89rem;
+    font-size: 0.95rem;
     line-height: 1.1rem;
     text-shadow: #000000 0 3px 4px;
     justify-items: center;
+    margin-bottom: 4rem;
+}
+div.box-a-empresa {
+    margin-top: 29rem;
+    position: absolute;
+    height: 52rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.box-a-empresa-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 230px;
+    width: 311px;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    background-color: #ED5E11;
+}
+section.sustentabilidade {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 85vh;
+    padding-top: 35rem;
+    background-image: url(/img/sustentabilidade_bottom.jpg);
+    background-repeat: no-repeat;
+}
+h2.sustentabilidade-title{
+    font-size: 2.3rem;
+    color: #FFFFFF;
+    text-shadow: #000000 0 3px 4px;
+}
+img.sustentabilidade-icon{
+    margin-top: 3.5rem;
 }

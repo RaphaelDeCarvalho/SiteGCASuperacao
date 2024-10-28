@@ -104,7 +104,7 @@ li.subtitle-item p{
     box-shadow: #000000 2px 2px 6px;
 }
 section.a-empresa {
-    height: 105vh;
+    height: 111vh;
     background-image: url(/img/a_empresa_top.png);
     background-position: center;
     display: flex;
@@ -118,7 +118,7 @@ h1.a-empresa-title {
     text-shadow: #000000 0 3px 4px;
     margin-top: 9rem;
 }
-p.a-empresa-subtitle {
+p.line-text {
     margin-top: 2.5rem;
     color: #FFFFFF;
     font-size: 0.95rem;
@@ -130,7 +130,7 @@ p.a-empresa-subtitle {
 div.box-a-empresa {
     margin-top: 29rem;
     position: absolute;
-    height: 52rem;
+    height: 58rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -163,4 +163,7 @@ h2.sustentabilidade-title{
 }
 img.sustentabilidade-icon{
     margin-top: 3.5rem;
+}
+p.sustentabilidade-text {
+    line-height: 1.3rem;
 }

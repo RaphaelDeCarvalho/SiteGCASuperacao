@@ -155,6 +155,7 @@ section.sustentabilidade {
     padding-top: 35rem;
     background-image: url(/img/sustentabilidade_bottom.jpg);
     background-repeat: no-repeat;
+    background-position: center;
 }
 h2.sustentabilidade-title{
     font-size: 2.3rem;

@@ -133,7 +133,7 @@ div.flip-card-box {
     flex-direction: column;
 }
 .flip-card {
-    margin: 2rem 2rem;
+    margin: 2rem 0;
     background-color: transparent;
     height: 230px;
     width: 311px;
@@ -185,7 +185,7 @@ section.sustentabilidade {
     text-align: center;
     align-items: center;
     height: 85vh;
-    padding-top: 35rem;
+    padding-top: 37rem;
 }
 h2.sustentabilidade-title{
     font-size: 2.3rem;

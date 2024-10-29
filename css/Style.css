@@ -112,8 +112,8 @@ section.a-empresa {
     align-items: center;
     text-align: center;
 }
-h1.a-empresa-title {
-    font-size: 2.1rem;
+h1.section-title {
+    font-size: 2.5rem;
     color: #FFFFFF;
     text-shadow: #000000 0 3px 4px;
     margin-top: 9rem;
@@ -161,7 +161,7 @@ div.flip-card-box {
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
-  .flip-card-front {
+  .flip-card-front, .transform-card-front{
     color: #FFFFFF;
     font-size: 2rem;
   }
@@ -197,4 +197,55 @@ img.sustentabilidade-icon{
 }
 p.sustentabilidade-text {
     line-height: 1.3rem;
+}
+section.atuacao {
+    background-image: url(/img/atuacao_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+h2.section-subtitle {
+    margin-top: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #FFFFFF;
+    text-shadow: #000000 0 4px 3px;
+}
+section.atuacao p.line-text {
+    font-weight: 300;
+    line-height: 1.3rem;
+    text-shadow: #000000 0 4px 3px;
+}
+div.transform-card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+    width: 320px;
+    background-color: #ED5E11;
+}
+h2.vantagens-title {
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+div.transform-card-front i {
+    height: 0;
+}
+img.transform-card-icon {
+    height: 95px;
+    width: 95px;
+}
+h2.transform-card-title {
+    font-weight: 400;
+    font-size: 2rem;
+}
+div.transform-card-front h2 {
+    margin-top: 0.6rem;
 }

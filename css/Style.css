@@ -147,15 +147,16 @@ div.box-a-empresa-item {
     background-color: #ED5E11;
 }
 section.sustentabilidade {
+    background-image: url(/img/sustentabilidade_bottom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-size: cover;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     height: 85vh;
     padding-top: 35rem;
-    background-image: url(/img/sustentabilidade_bottom.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 h2.sustentabilidade-title{
     font-size: 2.3rem;

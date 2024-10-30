@@ -169,7 +169,7 @@ div.flip-card-box {
     height: 75px;
     width: 75px;
   }
-  .flip-card-back {
+  .flip-card-back, .transform-card-back {
     color: #FFFFFF;
     font-size: 0.95rem;
     line-height: 1.5rem;
@@ -231,9 +231,34 @@ div.transform-card-box {
     background-color: #ED5E11;
 }
 h2.vantagens-title {
+    margin-top: 2rem;
     color: #FFFFFF;
     font-size: 2.2rem;
     font-weight: 400;
+}
+
+div.transform-card {
+    display: flex;
+    width: 320px;
+    height: 320px;
+    margin: 1rem 0;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.transform-card-inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.transform-card-front {
+    position: absolute;
+    height: 150px;
+    width: 320px;
 }
 div.transform-card-front i {
     height: 0;
@@ -248,6 +273,29 @@ h2.transform-card-title {
 }
 div.transform-card-front h2 {
     margin-top: 0.6rem;
+}
+.transform-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    transform: none;
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ED5E11;
+}
+.transform-card-back:hover {
+    opacity: 1;
+}
+p.transform-card-text {
+    display: flex;
+    height: 100%;
+    width: 285px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
 }
 div.atuacao-bottom {
     height: 65vh;

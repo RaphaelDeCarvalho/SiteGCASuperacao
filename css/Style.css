@@ -122,7 +122,7 @@ p.line-text {
     margin-top: 2.5rem;
     color: #FFFFFF;
     font-size: 0.95rem;
-    line-height: 1.1rem;
+    line-height: 1.2rem;
     text-shadow: #000000 0 3px 4px;
     justify-items: center;
     margin-bottom: 4rem;
@@ -198,7 +198,7 @@ img.sustentabilidade-icon{
 p.sustentabilidade-text {
     line-height: 1.3rem;
 }
-section.atuacao {
+div.atuacao-top {
     background-image: url(/img/atuacao_background.jpg);
     background-repeat: no-repeat;
     background-position: center;  
@@ -217,7 +217,7 @@ h2.section-subtitle {
     color: #FFFFFF;
     text-shadow: #000000 0 4px 3px;
 }
-section.atuacao p.line-text {
+section div.atuacao-top p.line-text {
     font-weight: 300;
     line-height: 1.3rem;
     text-shadow: #000000 0 4px 3px;
@@ -248,4 +248,20 @@ h2.transform-card-title {
 }
 div.transform-card-front h2 {
     margin-top: 0.6rem;
+}
+div.atuacao-bottom {
+    height: 65vh;
+    background-image: url(/img/atuacao_bottom.jpg);
+    background-size: cover;
+    background-position: center;
+}
+p.atuacao-text {
+    margin-top: 0;
+    padding-top: 2.5rem;
+    color: #000000;
+    text-shadow: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.32rem;
 }

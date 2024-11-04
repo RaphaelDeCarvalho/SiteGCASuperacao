@@ -20,6 +20,11 @@
     background: rgb(254,55,50);
     background: linear-gradient(90deg, rgba(254,55,50,1) 0%, rgba(255,143,77,1) 50%, rgba(254,55,50,1) 100%);
 }
+.a-empresa, .sustentabilidade, .atuacao-top, .atuacao-bottom, .servicos, .servicos-inner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .nav {
     color: #FFFFFF;
     font-size: 1.2rem;
@@ -133,7 +138,6 @@ section.empresa {
     height: 120vh;
     width: -webkit-fill-available;
     background-image: url(/img/a_empresa_top.png);
-    background-position: center;
     padding: 0 2rem;
 }
 .a-empresa p {
@@ -204,9 +208,6 @@ div.flip-card-box {
   }
 .sustentabilidade {
     background-image: url(/img/sustentabilidade_bottom.jpg);
-    background-repeat: no-repeat;
-    background-position: center;  
-    background-size: cover;
     height: auto;
     padding: 35rem 2rem 0rem 2rem;
 }
@@ -227,16 +228,11 @@ section.atuacao {
 }
 div.atuacao-top {
     background-image: url(/img/atuacao_background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;  
-    background-size: cover;
     height: auto;
 }
 div.atuacao-bottom {
     height: auto;
     background-image: url(/img/atuacao_bottom.jpg);
-    background-size: cover;
-    background-position: center;
 }
 p.atuacao-text {
     margin: 0;
@@ -335,8 +331,6 @@ p.transform-card-text {
 }
 section.servicos {
     background-image: url(/img/servicos_background.jpg);
-    background-size: cover;
-    background-position: center;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -361,8 +355,6 @@ section.servicos {
     align-content: center;
     align-items: flex-end;
     justify-content: center;
-    background-size: cover;
-    background-position: center;
 }
 .card-limpeza {
     background-image: url(/img/img_limpeza_geral.jpg);

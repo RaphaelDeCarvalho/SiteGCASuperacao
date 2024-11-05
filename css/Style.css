@@ -408,7 +408,7 @@ section.servicos {
     transition: .5s ease;
 }
 .contato {
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 h2.contato-addres {
     font-size: 1.65rem;
@@ -419,6 +419,9 @@ h2.contato-addres {
 }
 footer.footer {
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .footer-flex {
     display: flex;
@@ -426,16 +429,27 @@ footer.footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #ffffff6c;
+    background-color: #ffffff45;
     width: auto;
+    height: 260px;
     position: absolute;
-    padding: 1rem;
+    padding: 2rem;
+    margin-bottom: 4.2rem;
 }
 .footer-logo {
     height: 110px;
     width: auto;
 }
+.footer-subtitle{
+    margin-top: 1rem
+}
 p.footer-text {
     margin-top: 1rem;
     font-size: 1rem;
+}
+p.footer-signature {
+    height: auto;
+    font-size: small;
+    margin: 0.5rem;
+    font-weight: 400;
 }

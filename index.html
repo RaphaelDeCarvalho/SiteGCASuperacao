@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script/script.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -17,20 +19,23 @@
     <nav class="nav container">
         <ul class="nav-ul">
             <div class="div-nav-li div-nav-li-a nav-li">
-                <li class="nav-li-a"><a href="">GCA</a></li>
-                <li class="nav-li-b"><a href="">Superação</a></li>
+                <li class="nav-li-a"><a href="#home">GCA</a></li>
+                <li class="nav-li-b"><a href="#home">Superação</a></li>
             </div>
-            <div class="div-nav-li div-nav-li-b nav-li">
-                <li class="nav-li"><a href="">A empresa</a></li>
-                <li class="nav-li"><a href="">Atuação</a></li>
-                <li class="nav-li"><a href="">Serviços</a></li>
-                <li class="nav-li"><a href="">Contato</a></li>
-            </div>
+            <a href="javascript:void(0);" class="icon" onclick="slideMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </ul>
+        <div id="#myLinks" class="div-nav-li div-nav-li-b nav-li">
+            <li class="nav-li"><a href="#empresa">A empresa</a></li>
+            <li class="nav-li"><a href="#atuacao">Atuação</a></li>
+            <li class="nav-li"><a href="#servicos">Serviços</a></li>
+            <li class="nav-li"><a href="#contato">Contato</a></li>
+        </div>
     </nav>
     <i><button class="icon-whatsapp"><img class="icon-whatsapp" src="/img/whatsapp_IMG.png" alt="" srcset="" width="56"
                 height="56"></button></i>
-    <header class="bg-home container">
+    <header id="home" class="bg-home container">
         <div class="logo-play">
             <img class="logohome" src="/img/logoCGA.png" width="439" height="395">
             <button class='button play'></button>
@@ -54,7 +59,7 @@
             </li>
         </ul>
     </header>
-    <section class="empresa bg-image container">
+    <section id="empresa" class="empresa bg-image container">
         <div class="section a-empresa container">
             <h1 class="section-title">A empresa</h1>
             <p class="line-text">Temos mais de 8 anos de experiência no ramo de serviços terceirizados, esta empresa foi
@@ -115,7 +120,7 @@
                 porém sempre mantendo o mesmo padrão de qualidade na limpeza.</p>
         </div>
     </section>
-    <section class="section atuacao container">
+    <section id="atuacao" class="section atuacao container">
         <div class="section atuacao-top container">
             <h1 class="section-title">Atuação</h1>
             <h2 class="section-subtitle">Inovação e segurança sempre ao lado da GCA – SUPERAÇÃO LIMPEZA E JARDINAGEM
@@ -178,7 +183,7 @@
             </p>
         </div>
     </section>
-    <section class="section servicos container">
+    <section id="servicos" class="section servicos container">
         <h1 class="section-title">Serviços</h1>
         <div class="servicos-box">
             <div class="servicos-inner card-limpeza">
@@ -219,7 +224,7 @@
             </div>
         </div>
     </section>
-    <section class="section bg-home contato container">
+    <section id="contato" class="section bg-home contato container">
         <h1 class="section-title">Contato</h1>
         <div class="contato-flex">
             <div class="contato-box">

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .container {
     padding: 0 2rem;
     font-family: "Rubik", sans-serif;
@@ -26,23 +29,29 @@
     background-repeat: no-repeat;
 }
 .nav {
+    background-color: #ED5E11;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: -webkit-fill-available;
+    padding: 35px;
     color: #FFFFFF;
     font-size: 1.2rem;
     text-shadow: #000000 0 3px 4px;
-    display: flex;
-    flex-direction: row;
-    height: 6rem;
-    width: 90%;
     position: fixed;
     z-index: 2;
     display: flex;
-
 }
 .nav-ul{
-    width: 100%;
+    display: none;
+    width: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+li.nav-li {
+    margin: 20px;
+    font-size: 1.8rem;
 }
 .div-nav-li .nav-li-b{
     display: none;
@@ -50,7 +59,17 @@
 .div-nav-li.div-nav-li-b.nav-li {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: auto;
+    height: 0;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+    padding-top: 0;
+    transition: all 0.5s ease-in-out;
+}
+i.fa {
+    height: 20px;
     width: auto;
 }
 i button.icon-whatsapp {

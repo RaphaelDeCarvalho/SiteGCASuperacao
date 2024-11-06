@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 .container {
     padding: 0 2rem;
     font-family: "Rubik", sans-serif;
@@ -8,28 +9,39 @@ html {
     font-weight: 500;
     font-style: normal;
 }
+
 .section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.bg-home, footer.footer{
+
+.bg-home,
+footer.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(254,55,50);
-    background: linear-gradient(90deg, rgba(254,55,50,1) 0%, rgba(255,143,77,1) 50%, rgba(254,55,50,1) 100%);
+    background: rgb(254, 55, 50);
+    background: linear-gradient(90deg, rgba(254, 55, 50, 1) 0%, rgba(255, 143, 77, 1) 50%, rgba(254, 55, 50, 1) 100%);
 }
-.a-empresa, .sustentabilidade, .atuacao-top, .atuacao-bottom, .servicos, .servicos-inner {
+
+.a-empresa,
+.sustentabilidade,
+.atuacao-top,
+.atuacao-bottom,
+.servicos,
+.servicos-inner {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .nav {
-    background-color: #ED5E11;
+    background-color: #ffffff45;
+    backdrop-filter: blur(30px);
     display: flex;
     flex-direction: column;
     height: auto;
@@ -41,21 +53,26 @@ html {
     position: fixed;
     z-index: 2;
     display: flex;
+    transition: all 0.5s ease-in-out;
 }
-.nav-ul{
+
+.nav-ul {
     display: none;
     width: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 li.nav-li {
     margin: 20px;
     font-size: 1.8rem;
 }
-.div-nav-li .nav-li-b{
+
+.div-nav-li .nav-li-b {
     display: none;
 }
+
 .div-nav-li.div-nav-li-b.nav-li {
     display: flex;
     flex-direction: column;
@@ -68,10 +85,6 @@ li.nav-li {
     padding-top: 0;
     transition: all 0.5s ease-in-out;
 }
-i.fa {
-    height: 20px;
-    width: auto;
-}
 i button.icon-whatsapp {
     border: none;
     background: none;
@@ -80,17 +93,20 @@ i button.icon-whatsapp {
     margin-top: 90vh;
     margin-left: 80vw;
 }
-img.logohome{
+
+img.logohome {
     margin-top: 6rem;
     width: 214px;
     height: auto;
-    
+
 }
+
 div.logo-play {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
 }
+
 .button.play {
     width: 74px;
     height: 74px;
@@ -102,8 +118,9 @@ div.logo-play {
     border-color: transparent transparent transparent #202020;
     opacity: 60%;
     margin-bottom: 4rem;
-  }
-h1.home-title{
+}
+
+h1.home-title {
     margin-top: 6rem;
     color: #FFFFFF;
     font-size: 1.5rem;
@@ -112,12 +129,14 @@ h1.home-title{
     text-shadow: #000000 0 3px 4px;
     text-align: center;
 }
+
 h1.section-title {
     font-size: 2.5rem;
     color: #FFFFFF;
     text-shadow: #000000 0 3px 4px;
     padding-top: 9rem;
 }
+
 .section-subtitle {
     margin-top: 2.5rem;
     font-size: 1.3rem;
@@ -126,12 +145,14 @@ h1.section-title {
     color: #FFFFFF;
     text-shadow: #000000 0 4px 3px;
 }
-ul.home-subtitle-list{
+
+ul.home-subtitle-list {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
 }
-.subtitle-item{
+
+.subtitle-item {
     margin-top: 1rem;
     color: #FFFFFF;
     font-size: 0.9rem;
@@ -141,15 +162,18 @@ ul.home-subtitle-list{
     margin-left: auto;
     margin-right: auto;
 }
-li.subtitle-item p{
+
+li.subtitle-item p {
     height: 1px;
     width: 2rem;
     background-color: #FFFFFF;
     box-shadow: #000000 2px 2px 6px;
 }
+
 section.empresa {
     padding: 0;
 }
+
 .a-empresa {
     display: flex;
     flex-direction: column;
@@ -159,9 +183,11 @@ section.empresa {
     background-image: url(/img/a_empresa_top.png);
     padding: 0 2rem;
 }
+
 .a-empresa p {
     max-width: 701px;
 }
+
 p.line-text {
     margin-top: 2.5rem;
     color: #FFFFFF;
@@ -171,6 +197,7 @@ p.line-text {
     justify-items: center;
     margin-bottom: 4rem;
 }
+
 div.flip-card-box {
     width: 100%;
     display: flex;
@@ -182,25 +209,30 @@ div.flip-card-box {
     position: absolute;
     top: 165%;
 }
+
 .flip-card {
     margin: 2rem;
     background-color: transparent;
     height: 230px;
     width: 311px;
     perspective: 1000px;
-  }
-  .flip-card-inner {
+}
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  .flip-card:hover .flip-card-inner {
+}
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
+}
+
+.flip-card-front,
+.flip-card-back {
     background-color: #ED5E11;
     display: flex;
     flex-direction: column;
@@ -208,51 +240,66 @@ div.flip-card-box {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-  }
-  .flip-card-front, .transform-card-front{
+}
+
+.flip-card-front,
+.transform-card-front {
     color: #FFFFFF;
     font-size: 2rem;
-  }
-  .flip-card-icon {
+}
+
+.flip-card-icon {
     height: 75px;
     width: 75px;
-  }
-  .flip-card-back, .transform-card-back {
+}
+
+.flip-card-back,
+.transform-card-back {
     color: #FFFFFF;
     font-size: 0.95rem;
     line-height: 1.5rem;
     transform: rotateY(180deg);
-  }
+}
+
 .sustentabilidade {
     background-image: url(/img/sustentabilidade_bottom.jpg);
     height: auto;
     padding: 35rem 2rem 0rem 2rem;
 }
-h2.sustentabilidade-title{
+
+h2.sustentabilidade-title {
     font-size: 2.3rem;
     color: #FFFFFF;
     text-shadow: #000000 0 3px 4px;
 }
-img.sustentabilidade-icon{
+
+img.sustentabilidade-icon {
     margin-top: 3.5rem;
 }
+
 p.sustentabilidade-text {
     line-height: 1.3rem;
 }
+
 section.atuacao {
     display: contents;
-    padding-top: 4rem;
+    padding: 4rem;
+    height: auto;
 }
+
 div.atuacao-top {
     background-image: url(/img/atuacao_background.jpg);
     height: auto;
 }
+
 div.atuacao-bottom {
     height: auto;
     background-image: url(/img/atuacao_bottom.jpg);
 }
+
 p.atuacao-text {
     margin: 0;
     padding: 2.5rem 0;
@@ -263,11 +310,13 @@ p.atuacao-text {
     font-weight: 400;
     line-height: 1.32rem;
 }
+
 section div.atuacao-top p.line-text {
     font-weight: 300;
     line-height: 1.3rem;
     text-shadow: #000000 0 4px 3px;
 }
+
 div.transform-card-box {
     display: flex;
     flex-direction: column;
@@ -275,12 +324,14 @@ div.transform-card-box {
     justify-content: space-around;
     background-color: #ED5E11;
 }
+
 .transform-card-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 h2.vantagens-title {
     margin: 2rem 0;
     color: #FFFFFF;
@@ -298,6 +349,7 @@ div.transform-card {
     align-items: center;
     justify-content: center;
 }
+
 .transform-card-inner {
     height: 100%;
     width: 100%;
@@ -306,25 +358,31 @@ div.transform-card {
     align-items: center;
     justify-content: center;
 }
+
 .transform-card-front {
     position: absolute;
     height: 150px;
     width: 250px;
 }
+
 div.transform-card-front i {
     height: 0;
 }
+
 img.transform-card-icon {
     height: 80px;
     width: 80px;
 }
+
 h2.transform-card-title {
     font-weight: 400;
     font-size: 1.7rem;
 }
+
 div.transform-card-front h2 {
     margin-top: 0.6rem;
 }
+
 .transform-card-back {
     display: flex;
     flex-direction: column;
@@ -336,9 +394,11 @@ div.transform-card-front h2 {
     transition: .5s ease;
     background-color: #ED5E11;
 }
+
 .transform-card-back:hover {
     opacity: 1;
 }
+
 p.transform-card-text {
     display: flex;
     height: 100%;
@@ -348,6 +408,7 @@ p.transform-card-text {
     align-items: center;
     font-weight: 400;
 }
+
 section.servicos {
     background-image: url(/img/servicos_background.jpg);
     height: auto;
@@ -356,6 +417,7 @@ section.servicos {
     text-align: center;
     align-items: center;
 }
+
 .servicos-box {
     display: flex;
     flex-direction: row;
@@ -365,6 +427,7 @@ section.servicos {
     align-content: space-around;
     justify-content: space-evenly;
 }
+
 .servicos-inner {
     display: flex;
     flex-direction: column;
@@ -375,33 +438,42 @@ section.servicos {
     align-items: flex-end;
     justify-content: center;
 }
-.servicos-inner:hover .servicos-card-front{
+
+.servicos-inner:hover .servicos-card-front {
     width: 320px;
 }
+
 .servicos-inner:hover .servicos-card-title {
     opacity: 0;
 }
+
 .servicos-inner:hover .servicos-card-list {
     margin-right: 0;
 }
+
 .card-limpeza {
     background-image: url(/img/img_limpeza_geral.jpg);
 }
+
 .card-jardinagem {
     background-image: url(/img/img_jardinagem.jpg);
 }
+
 .card-jardinagem-title {
     margin-right: 1.6rem;
 }
+
 .card-manutencao {
     background-image: url(/img/img_manutencao.jpg);
 }
+
 .servicos-card-title {
     font-size: 2.6rem;
     color: #FFFFFFFF;
     text-shadow: #000000 0 3px 4px;
     transition: .5s ease;
 }
+
 .servicos-card-front {
     display: flex;
     flex-direction: column;
@@ -415,6 +487,7 @@ section.servicos {
     transition: .5s ease;
     overflow: hidden;
 }
+
 .servicos-card-list {
     width: 240px;
     text-align: left;
@@ -426,23 +499,29 @@ section.servicos {
     padding-right: 1rem;
     transition: .5s ease;
 }
+
 .contato {
     justify-content: space-evenly;
     padding-bottom: 1rem;
+    height: 100vh;
 }
+
 h2.contato-addres {
     font-size: 1.65rem;
     margin-bottom: 2.5rem;
 }
+
 .contato-map {
     margin-bottom: 2rem;
 }
+
 footer.footer {
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
+
 .footer-flex {
     display: flex;
     flex-direction: row;
@@ -455,17 +534,21 @@ footer.footer {
     position: relative;
     padding: 2rem;
 }
+
 .footer-logo {
     height: 110px;
     width: auto;
 }
-.footer-subtitle{
+
+.footer-subtitle {
     margin-top: 1rem
 }
+
 p.footer-text {
     margin-top: 1rem;
     font-size: 1rem;
 }
+
 p.footer-signature {
     height: auto;
     font-size: small;

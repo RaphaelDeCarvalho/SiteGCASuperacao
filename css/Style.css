@@ -55,7 +55,6 @@ footer.footer {
     display: flex;
     transition: all 0.5s ease-in-out;
 }
-
 .nav-ul {
     display: none;
     width: inherit;
@@ -63,20 +62,26 @@ footer.footer {
     align-items: center;
     justify-content: space-between;
 }
-
 li.nav-li {
-    margin: 20px;
-    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 15px;
+    width: 8rem;
+    border-radius: 7px;
 }
-
+li.nav-li:active {
+    border: 1px solid;
+}
 .div-nav-li .nav-li-b {
     display: none;
 }
-
 .div-nav-li.div-nav-li-b.nav-li {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
     width: auto;
     height: 0;
     text-align: center;
@@ -84,6 +89,9 @@ li.nav-li {
     overflow: hidden;
     padding-top: 0;
     transition: all 0.5s ease-in-out;
+}
+a.menu-item {
+    font-size: 1.3rem;
 }
 i button.icon-whatsapp {
     border: none;

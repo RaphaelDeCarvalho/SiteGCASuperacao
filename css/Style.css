@@ -111,6 +111,15 @@ img.logohome {
 
 }
 
+video.video-header {
+    top: 15vh;
+    height: auto;
+    max-width: 375px;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+
 div.logo-play {
     display: flex;
     flex-direction: column-reverse;
@@ -126,8 +135,9 @@ div.logo-play {
     box-sizing: border-box;
     border-width: 37px 0px 37px 74px;
     border-color: transparent transparent transparent #202020;
-    opacity: 60%;
+    opacity: 0;
     margin-bottom: 4rem;
+    transition: all 0.5s ease-in-out;
 }
 
 h1.home-title {

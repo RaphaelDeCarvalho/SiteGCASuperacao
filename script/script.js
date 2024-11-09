@@ -35,3 +35,28 @@ function slideMenu() {
         }
     });
 };
+
+function showPlay() {
+    let playButton = document.querySelector(".button.play")
+    playButton.style.opacity = "60%"
+}
+function hidePlay() {
+    let playButton = document.querySelector(".button.play")
+    playButton.style.opacity = "0%"
+}
+
+function videoStart() {
+    let showVideo = document.querySelector(".video-header")
+    let playVideo = document.querySelector("video")
+    showVideo.style.opacity = "100%"
+    playVideo.play()
+    hidePlay()
+    let playButton = document.querySelector(".button.play")
+    playButton.style.display = "none"
+    document.querySelector("#video-header").addEventListener('ended', function () {
+        showVideo.style.opacity = "0"
+        playButton.style.display = "block"
+    })
+};
+
+window.onload = setInterval(showPlay, 4000), setInterval(hidePlay, 6000);

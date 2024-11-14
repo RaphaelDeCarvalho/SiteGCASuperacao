@@ -35,7 +35,6 @@ function slideMenu() {
         }
     });
 };
-
 function showPlay() {
     let playButton = document.querySelector(".button.play")
     playButton.style.opacity = "60%"
@@ -46,16 +45,49 @@ function hidePlay() {
 }
 
 function videoStart() {
-    let showVideo = document.querySelector(".video-header")
+    function showVideo() {
+        let showVideo = document.querySelector(".video-header")
+        let videoBg = document.querySelector(".video-bg")
+        let playButton = document.querySelector(".button.play")
+        showVideo.style.position = "fixed"
+        showVideo.style.zIndex = "2"
+        showVideo.style.width = "100%"
+        videoBg.style.display = "block"
+        showVideo.style.opacity = "100%"
+        playButton.style.display = "none"
+    }
+    showVideo()
     let playVideo = document.querySelector("video")
-    showVideo.style.opacity = "100%"
     playVideo.play()
     hidePlay()
-    let playButton = document.querySelector(".button.play")
-    playButton.style.display = "none"
-    document.querySelector("#video-header").addEventListener('ended', function () {
+    function hideVideo() {
+        let showVideo = document.querySelector(".video-header")
+        let videoBg = document.querySelector(".video-bg")
+        let playButton = document.querySelector(".button.play")
+        videoBg.style.display = "none"
+        showVideo.style.width = ""
         showVideo.style.opacity = "0"
+        showVideo.style.position = ""
+        showVideo.style.zIndex = ""
         playButton.style.display = "block"
+    }
+    document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 27) {
+            hideVideo();
+            playVideo.pause();
+            playVideo.currentTime = 0;
+        }
+      };
+    document.querySelector("#video-header").addEventListener('ended', function () {
+        hideVideo();
+        playVideo.pause();
+        playVideo.currentTime = 0;
+    })
+    document.querySelector("#video-bg").addEventListener('click', function () {
+        hideVideo();
+        playVideo.pause();
+        playVideo.currentTime = 0;
     })
 };
 

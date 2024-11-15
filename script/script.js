@@ -74,21 +74,19 @@ function videoStart() {
     document.onkeydown = function(evt) {
         evt = evt || window.event;
         if (evt.keyCode == 27) {
-            hideVideo();
-            playVideo.pause();
-            playVideo.currentTime = 0;
+            closeVideo();
         }
       };
-    document.querySelector("#video-header").addEventListener('ended', function () {
+    
+    let videoPlayer = document.querySelector("#video-header");
+    videoPlayer.addEventListener('ended', closeVideo, false);
+    videoPlayer.addEventListener('click', closeVideo, false);
+    videoBg.addEventListener('click', closeVideo, false);
+    function closeVideo() {
         hideVideo();
         playVideo.pause();
         playVideo.currentTime = 0;
-    })
-    document.querySelector("#video-bg").addEventListener('click', function () {
-        hideVideo();
-        playVideo.pause();
-        playVideo.currentTime = 0;
-    })
+    }
 };
 
 window.onload = setInterval(showPlay, 4000), setInterval(hidePlay, 6000);

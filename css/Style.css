@@ -48,7 +48,7 @@ footer.footer {
     padding: 35px;
     color: #FFFFFF;
     font-size: 1.2rem;
-    text-shadow: #000000 0 3px 4px;
+    text-shadow: #0000004f 0 2px 3px;
     position: fixed;
     z-index: 2;
     display: flex;
@@ -198,7 +198,15 @@ li.subtitle-item p {
     background-color: #FFFFFF;
     box-shadow: #000000 2px 2px 6px;
 }
-
+div.home-strip {
+    display: none;
+    top: 71px;
+    background-color: #FFFFFF;
+    height: 120px;
+    width: 100vw;
+    filter: opacity(0.3);
+    position: relative;
+}
 section.empresa {
     padding: 0;
 }
@@ -352,6 +360,7 @@ div.transform-card-box {
     align-content: center;
     justify-content: space-around;
     background-color: #ED5E11;
+    position: relative;
 }
 
 .transform-card-flex {
@@ -610,5 +619,220 @@ p.footer-signature {
     }
     .footer-flex {
         height: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 60px;
+    }
+    .nav-ul{
+        width: auto;
+    }
+    li.nav-li{
+        width: auto;
+    }
+    li.nav-li:hover {
+        border: 1px solid;
+    }
+    .div-nav-li.div-nav-li-a.nav-li {
+        display: flex
+    ;
+        flex-direction: row;
+        gap: .5rem;
+    }
+    .div-nav-li .nav-li-b {
+        display: block;
+    }
+        .div-nav-li.div-nav-li-b.nav-li {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    a.icon {
+        display: none;
+    }
+
+    img.logohome {
+        width: 320px;
+    }
+    .button.play {
+        margin-bottom: 7.5rem;
+    }
+    h1.home-title {
+        margin-top: 4rem;
+        font-size: 2.3rem;
+    }
+    ul.home-subtitle-list {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    li.subtitle-item {
+        font-size: 1.3rem;
+    }
+    li.subtitle-item p {
+        transform: rotate(90deg);
+        margin: 10px;
+        width: 1.5rem;
+    }
+    div.home-strip {
+        display: block;
+    }
+    .a-empresa, .sustentabilidade {
+        height: 37vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        border: 3rem solid #B5B6B5;
+    }
+    .a-empresa {
+        border-top: 7rem solid #B5B6B5;
+        border-bottom: 0;
+    }
+    .a-empresa .section-title {
+        font-size: 3rem;
+        padding-top: 4rem;
+    }
+    .a-empresa p, .sustentabilidade-text {
+        max-width: 521px;
+    }
+    div.flip-card-box {
+        top: 134%;
+        flex-wrap: nowrap;
+    }
+    .sustentabilidade {
+        border-top: 0;
+        border-bottom: 4rem solid #B5B6B5;
+        padding-top: 3rem;
+    }
+    .title-and-icon {
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img.sustentabilidade-icon {
+        margin-top: 2rem;
+        height: 165px;
+        width: auto;
+    }
+    p.sustentabilidade-text {
+        margin-top: 7rem;
+    }
+    .section .atuacao-top, .section .atuacao-bottom {
+        height: 50vh;
+    }
+    div.transform-card-box {
+        position: absolute;
+        top: 240%;
+    }
+    .title-and-subtitle {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        padding-top: 9rem;
+        width: -webkit-fill-available;
+        justify-content: space-around;
+        gap: 20%;
+    }
+    .atuacao-top .title-and-subtitle h1.section-title {
+        padding-top: 0;  
+    }
+    .title-and-subtitle .section-subtitle {
+        max-width: 490px;
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    section div.atuacao-top p.line-text {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        max-width: 760px;
+    }
+    div.atuacao-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    p.atuacao-text {
+        font-size: 1rem;
+    }
+    .atuacao-bottom .atuacao-text {
+        max-width: 950px;
+        padding-top: 15rem;
+    }
+    section.servicos {
+        height: 100vh;
+    }
+    .servicos h1.section-title {
+        padding-left: 1.8rem;
+        align-self: flex-start;
+    }
+    .servicos-box {
+        margin-top: 1rem;
+    }
+    .servicos-inner {
+        height: 260px;
+        width: 456px;
+        margin: 1rem;
+    }
+    .servicos-card-title {
+        font-size: 2rem;
+    }
+    .card-limpeza-title {
+        margin-right: 4.5rem;
+    }
+    .card-jardinagem-title {
+        margin-right: 8rem;
+    }
+    .card-manutencao-title {
+        margin-right: 2.5rem;
+    }
+    .servicos-card-front {
+        height: 260px;
+        justify-content: flex-start;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(224, 95, 26, 1) 35%);
+    }
+    .card-list-title {
+        padding: 1rem 0;
+        font-size: 1.55rem;
+    }
+    .servicos-card-list {
+        width: 285px;
+        font-size: .85rem;
+        line-height: 1.5rem;
+    }
+    section.contato {
+        height: 78vh;
+    }
+    .contato h1.section-title {
+        align-self: flex-start;
+        padding-left: 1.8rem;
+        font-size: 3rem;
+    }
+    section.contato div.contato-flex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contato-box {
+        max-width: 495px;
+    }
+    .contato-box h2.section-subtitle {
+        margin-top: 0;
+        padding-left: 1.8rem;
+        font-size: 1.6rem;
+    }
+    .contato-box h2.contato-addres {
+        font-size: 1.2rem;
+    }
+    .footer-flex {
+        height: 110px;
     }
 }

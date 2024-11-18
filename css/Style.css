@@ -846,9 +846,9 @@ p.footer-signature {
         top: 115px;
     }
 }
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1440px){
     .nav {
-        padding: 35px 15rem;
+        padding: 35px 10rem;
     }
 
     .a-empresa, .sustentabilidade {
@@ -858,11 +858,11 @@ p.footer-signature {
         margin-top: 4rem;
     }
     .title-and-subtitle {
-        padding-top: 11rem;
+        padding-top: 10rem;
         gap: 0;
     }
     section.servicos {
-        padding: 0 15rem;
+        padding: 0 9rem;
     }
     .servicos-inner {
         margin: 2rem;
@@ -871,6 +871,6 @@ p.footer-signature {
         padding-top: 11rem;
     }
     .contato {
-        padding: 0rem 15rem 1rem 15rem;
+        padding: 0rem 10rem 1rem 10rem;
     }
 }

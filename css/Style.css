@@ -48,7 +48,7 @@ footer.footer {
     padding: 35px;
     color: #FFFFFF;
     font-size: 1.2rem;
-    text-shadow: #0000004f 0 2px 3px;
+    text-shadow: #0000004f 0 3px 2px;
     position: fixed;
     z-index: 2;
     display: flex;
@@ -598,6 +598,10 @@ p.footer-signature {
 }
 
 @media screen and (min-width: 768px) {
+    a.icon-whatsapp {
+        margin-top: 85vh;
+        margin-left: 85vw;
+    }
     video.video-header {
         height: 70vh;
     }
@@ -773,6 +777,7 @@ p.footer-signature {
     }
     .servicos-box {
         margin-top: 1rem;
+        max-width: 1420px;
     }
     .servicos-inner {
         height: 260px;
@@ -834,5 +839,38 @@ p.footer-signature {
     }
     .footer-flex {
         height: 110px;
+    }
+}
+@media screen and (min-height: 918px) {
+    div.home-strip {
+        top: 115px;
+    }
+}
+@media screen and (min-width: 1280px){
+    .nav {
+        padding: 35px 15rem;
+    }
+
+    .a-empresa, .sustentabilidade {
+        justify-content: space-around;
+    }
+    img.sustentabilidade-icon {
+        margin-top: 4rem;
+    }
+    .title-and-subtitle {
+        padding-top: 11rem;
+        gap: 0;
+    }
+    section.servicos {
+        padding: 0 15rem;
+    }
+    .servicos-inner {
+        margin: 2rem;
+    }
+    .servicos h1.section-title {
+        padding-top: 11rem;
+    }
+    .contato {
+        padding: 0rem 15rem 1rem 15rem;
     }
 }

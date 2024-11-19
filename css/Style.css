@@ -217,7 +217,7 @@ section.empresa {
     align-items: center;
     height: 120vh;
     width: -webkit-fill-available;
-    background-image: url(/img/a_empresa_top.png);
+    background-image: url(img/a_empresa_top.png);
     padding: 0 2rem;
 }
 
@@ -302,7 +302,7 @@ div.flip-card-box {
 }
 
 .sustentabilidade {
-    background-image: url(/img/sustentabilidade_bottom.jpg);
+    background-image: url(img/sustentabilidade_bottom.jpg);
     height: auto;
     padding: 35rem 2rem 0rem 2rem;
 }
@@ -328,13 +328,13 @@ section.atuacao {
 }
 
 div.atuacao-top {
-    background-image: url(/img/atuacao_background.jpg);
+    background-image: url(img/atuacao_background.jpg);
     height: auto;
 }
 
 div.atuacao-bottom {
     height: auto;
-    background-image: url(/img/atuacao_bottom.jpg);
+    background-image: url(img/atuacao_bottom.jpg);
 }
 
 p.atuacao-text {
@@ -448,7 +448,7 @@ p.transform-card-text {
 }
 
 section.servicos {
-    background-image: url(/img/servicos_background.jpg);
+    background-image: url(img/servicos_background.jpg);
     height: auto;
     display: flex;
     flex-direction: column;
@@ -490,11 +490,11 @@ section.servicos {
 }
 
 .card-limpeza {
-    background-image: url(/img/img_limpeza_geral.jpg);
+    background-image: url(img/img_limpeza_geral.jpg);
 }
 
 .card-jardinagem {
-    background-image: url(/img/img_jardinagem.jpg);
+    background-image: url(img/img_jardinagem.jpg);
 }
 
 .card-jardinagem-title {
@@ -502,7 +502,7 @@ section.servicos {
 }
 
 .card-manutencao {
-    background-image: url(/img/img_manutencao.jpg);
+    background-image: url(img/img_manutencao.jpg);
 }
 
 .servicos-card-title {

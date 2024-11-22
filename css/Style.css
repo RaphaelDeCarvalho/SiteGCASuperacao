@@ -100,8 +100,8 @@ a.icon-whatsapp {
     background: none;
     position: fixed;
     z-index: 2;
-    margin-top: 90vh;
-    margin-left: 80vw;
+    margin-top: 90dvh;
+    margin-left: 80dvw;
 }
 .video-bg {
     display: none;

@@ -88,5 +88,5 @@ function videoStart() {
         playVideo.currentTime = 0;
     }
 };
-window.scrollTo(0,1);
-window.onload = setInterval(showPlay, 4000), setInterval(hidePlay, 6000);
+
+window.onload = window.scrollTo(0,80), setInterval(showPlay, 4000), setInterval(hidePlay, 6000);

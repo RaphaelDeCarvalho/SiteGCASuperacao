@@ -23,7 +23,7 @@ footer.footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     background: rgb(254, 55, 50);
     background: linear-gradient(90deg, rgba(254, 55, 50, 1) 0%, rgba(255, 143, 77, 1) 50%, rgba(254, 55, 50, 1) 100%);
 }
